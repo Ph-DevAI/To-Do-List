@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    font-family: Poppins;
+}
+body{
+   margin: 0;
+   height: 200vh;
+   background-color: #f0f0f0;
+}
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+nav {
+    margin: 10px 0;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    background-color: white;
+    color: #4CAF50;
+}
+
+.todo-container{
+    padding: 10px;
+    box-shadow: 1px 2px 3px 4px skyblue;
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    margin: 40px auto;
+}
+.todo-container i {
+    font-size: 2rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+.todo-container h1{
+    margin: 0 auto;
+    padding: 10px;
+    font-family: Lucida Calligraphy;
+    color: skyblue;
+    text-shadow: 1px 1px skyblue;
+}
+.todo-container input{
+    margin: 10px auto;
+    border-radius: 10px;
+    width: 50%;
+    height: 50px;
+    font-size: 1.2rem;
+    color: gray;
+    border: 0.3px solid skyblue;
+}
+.todo-container .button{
+    margin: 5px;
+    border-radius: 10px;
+    padding: 5px;
+    color: aliceblue;
+    background-color: skyblue;
+    font-size: 1.2rem;
+    color: gray;
+    border: none;
+    box-shadow: 1px 2px 3px 4px skyblue;
+    cursor: pointer;
+}
+.todo-container .button:hover{
+    background-color:#4CAF50;
+    box-shadow: 1px 2px 3px 4px #4CAF50;
+    color: skyblue;
+}
+.todo-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+.todo-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid skyblue;
+}
+.todo-list li button{
+    padding: 5px;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 10px;
+}
+.todo-list li button:hover{
+    background-color: darkred;
+    cursor: pointer;
+    
+}
+/* Ajout de styles pour le footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+footer p {
+    margin: 5px 0;
+    color: #555;
+}
+/* Ajout de styles pour les liens du footer */
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Rendre la page web responsive et utilisable sur mobile */
+@media (max-width: 600px) {
+    .todo-container {
+        width: 90%;
+    }
+    .todo-container input {
+        width: 80%;
+    }
+    .todo-container h1 {
+        font-size: 1.5rem;
+    }
+    .todo-container .button {
+        width: 80%;
+        font-size: 1rem;
+    }
+    .todo-list li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .todo-list li button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+}
